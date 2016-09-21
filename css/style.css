@@ -1,5 +1,6 @@
 /*ESTE É UM FODENDO ESTILO EM CSS, NÃO MEXA AQUI, CASO TENHA AMOR A SUA VIDA, OBRIGADO(A) A GERENCIA DESTE FODENDO*/
 
+/* PALETA DE CORES https://coolors.co/c0d789-2274a5-fadf63-e6af2e-333333*/
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +8,14 @@
 }
 
 html {
-   background-image: url(../imagens/fondo_reputacion_25601.jpg);
+    background-image: url(../imagens/pexels-photo-104675.jpeg);
     background-size: cover;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
 
 #login-box {
-    box-shadow: 3px;
+  box-shadow: 3px;
 	width: 410px;
 	height: 310px;
 	border-radius: 5px;
@@ -23,26 +24,21 @@ html {
 .login-box-interno {
 	width: 30%;
 	height: 80%;
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(51,51,51,.4);
 	position: absolute;
 	margin: 10px;
 	border-radius: 8px;
 	overflow: hidden;
   padding-top: 15%;
   float: left;
-
-
-
 }
 
 #login-box-label {
-	height: 45px;
+
 	text-align: center;
 	font: 20px/45px sans-serif;
 	color: white;
 	text-shadow: 1px 0px 1px white;
-
-
 }
 
 .input-div input {
@@ -58,8 +54,6 @@ html {
 	font: normal 13px sans-serif;
 	border: 3px solid white;
 	outline: none;
-
-
 }
 .input-div:hover input{
 	border-color: #7dc6dd;
@@ -73,7 +67,7 @@ html {
   font:bold 20px Tahoma, Geneva, sans-serif;
   font-style:normal;
   color:#ffffff;
-  background:#2980B9;
+  background:#2274A5;
   border:0px solid #ffffff;
   text-shadow:0px -1px 1px #222222;
   box-shadow:2px 2px 5px #000000;
@@ -125,6 +119,7 @@ top:2px;
     text-align: center;
     color: white;
     font-size: 22px;
+    margin-top: 5%;
 
 }
 
@@ -149,14 +144,15 @@ top:2px;
 }
 
 #logo-nav {
-    background-color: black;
     color: white;
-    height: 60px;
-    width: 15%;
-    font-size: 30px;
-    text-align-last: center;
     float: left;
+
 }
+#logo-nav > img {
+  width: 150px;
+/*  margin: 7px;*/
+}
+
 
 #texto-nav {
     width: auto;
@@ -169,17 +165,18 @@ top:2px;
 }
 
 #pao {
-    background-color: rgba(0,0,0,.4);
-    width: 60%;
-  height: 80%;
+    background-color: rgba(51,51,51,.4);
+    width: 65%;
+    height: 80%;
     position: absolute;
     right: 10px;
     top: 70px;
     border-radius: 10px;
     text-align: center;
-  font: 20px/45px sans-serif;
-  color: white;
-  text-shadow: 1px 0px 1px white;
+    font: 20px/45px sans-serif;
+    color: white;
+    text-shadow: 1px 0px 1px white;
+    padding: 3% 0 3% 0; 
     
 }
 
@@ -261,8 +258,61 @@ tr:nth-child(even) {
 
 }
   
-
-
 fieldset {
   text-align: center;
 }
+
+/*NAVBAR*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 10%;
+    overflow: hidden;
+    background-color: #333;
+    line-height: 40px;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2274A5;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*FIM NAVBAR*/
