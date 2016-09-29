@@ -14,27 +14,78 @@ html {
     font-size: 14px;
 }
 
-#login-box {
+#login {
+  margin: -10px;
   box-shadow: 3px;
-	width: 410px;
-	height: 310px;
+	max-width: 40%;
+	border-radius: 5px;
+  position: absolute;
+}
+
+#login-box {
+	box-shadow: 3px;
+	width: 80%;
+	margin: 0 auto;
 	border-radius: 5px;
 }
 
-.login-box-interno {
-	width: 30%;
-	height: 80%;
+/* Página de Informações de Evento */
+#center {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.3%;
+}
+
+.evento-box {
+	box-shadow: 3px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	clear: both;
+	margin-top: 1.3%;
+}
+
+.evento-box-label {
+	text-align: center;
+	font: 20px/45px sans-serif;
+	color: white;
+	text-shadow: 1px 0px 1px white;
+}
+
+.evento-box-interno {
+	margin-left: 2%;
+	margin-right: 2%;
+	min-height: 10%;
 	background-color: rgba(51,51,51,.4);
-	position: absolute;
-	margin: 10px;
+	margin-top: 10px;
 	border-radius: 8px;
 	overflow: hidden;
-  padding-top: 15%;
-  float: left;
+	padding: 2%;
+}
+
+.info-evento {
+	text-align: left;
+	font-size: 16px;
+}
+
+.botao {
+	
+}
+/* Fim de página de Informações de Evento */
+
+.login-box-interno {
+	width: 80%;
+	min-height: 10%;
+	background-color: rgba(51,51,51,.4);
+	margin-top: 10px;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 2%;
+	float: left;
 }
 
 #login-box-label {
-
 	text-align: center;
 	font: 20px/45px sans-serif;
 	color: white;
@@ -42,12 +93,11 @@ html {
 }
 
 .input-div input {
-    margin: 20px;
-	background-color: #f2f5f7;
+  margin: 20px;
+  background-color: #f2f5f7;
 	border-radius: 15px;
-    display: inline-block;
-    margin-bottom: 8px;
-
+  display: inline-block;
+  margin-bottom: 8px;
 	width: 250px;
 	height: 40px;
 	padding-left: 5px;
@@ -55,13 +105,14 @@ html {
 	border: 3px solid white;
 	outline: none;
 }
+
 .input-div:hover input{
 	border-color: #7dc6dd;
 }
+
 #input-senha {
 	margin-top: 0px;
 }
-
 
 .btn_login {
   font:bold 20px Tahoma, Geneva, sans-serif;
@@ -82,10 +133,11 @@ html {
   width: 250px;
   margin-top: 0.5%;
 }
+
 .btn_login:active{
-cursor:pointer;
-position:relative;
-top:2px;
+  cursor:pointer;
+  position:relative;
+  top:2px;
 }
 
 .btn_login:hover {
@@ -112,7 +164,6 @@ top:2px;
     visibility: hidden;
     margin-top: 7px;
     margin-bottom: 7px;
-
 }
 
 .login-form {
@@ -120,7 +171,6 @@ top:2px;
     color: white;
     font-size: 22px;
     margin-top: 5%;
-
 }
 
 #recover {
@@ -134,50 +184,22 @@ top:2px;
     }
 }
 
-#nave{
-    width: 100%;
-    font-size: 23px;
-    color: black;
-    font-weight: 900;
-    height: 60px;
-
-}
-
-#logo-nav {
-    color: white;
-    float: left;
-
-}
-#logo-nav > img {
-  width: 150px;
-/*  margin: 7px;*/
-}
-
-
-#texto-nav {
-    width: auto;
-    height: 60px;
-    background-color: aqua;
-}
-
 #div-geral {
     display: inline-block;
+	padding: 4%;
 }
 
 #pao {
     background-color: rgba(51,51,51,.4);
-    width: 65%;
-    height: 80%;
-    position: absolute;
-    right: 10px;
-    top: 70px;
+    float: right;
+    max-width: 60%;
+    position: relative;
     border-radius: 10px;
     text-align: center;
     font: 20px/45px sans-serif;
     color: white;
     text-shadow: 1px 0px 1px white;
-    padding: 3% 0 3% 0; 
-    
+    padding: 3% 0 3% 0;
 }
 
 #goibada {
@@ -219,7 +241,6 @@ table {
     width: 90%;
     background-color: white;
     margin:auto;
-
 }
 
 td, th {
@@ -238,31 +259,63 @@ tr:nth-child(even) {
   height: 100px;
   width: 100px;
   margin: 3% auto;
+}
+
+.foto2 {
+  background-image: url("../imagens/download.jpg");
+  background-size: 100%;
+  height: 100px;
+  width: 100px;
+  margin: 3% auto;
 } 
+
 .info {
   color: white;
   font-size: 24px;
   margin-top: 3%;
   margin-bottom: 3%;
-
 }
 
 .info > div > a {
-
   color: lightblue;
-
 }
+
 .info > div {
-
   margin-top: 3%;
-
 }
-  
+
 fieldset {
   text-align: center;
 }
 
 /*NAVBAR*/
+
+#nave{
+    width: 100%;
+    font-size: 23px;
+    color: black;
+    font-weight: 900;
+    height: 60px;
+	margin-bottom: 0.5%;
+}
+
+#logo-nav {
+    color: white;
+    float: left;
+    height: 100%;
+}
+
+#logo-nav > img {
+  width: 150px;
+/*  margin: 7px;*/
+}
+
+#texto-nav {
+    width: auto;
+    height: 60px;
+    background-color: aqua;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
